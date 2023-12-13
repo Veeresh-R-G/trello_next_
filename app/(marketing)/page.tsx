@@ -24,15 +24,15 @@ function MarketingPage() {
         <div className='flex items-center justify-center flex-col'>
             <div className={cn('flex items-center justify-center flex-col', headingFont.className)}>
                 <div className='mb-4 flex items-center border 
-                shadow-sm p-4 bg-amber-100
-                text-amber-700 rounded-full uppercase'>
+                shadow-sm p-4 bg-green-100
+                text-emerald-700 rounded-full uppercase'>
                     <Medal className='mr-2 h-6 w-6' />
                     No 1 Task Management
                 </div>
                 <h1 className='text-3xl mg:text-6xl text-center text-neutral-800 mb-6'>
                     Taskify helps team move
                 </h1>
-                <div className='text-3xl mg:text-6xl bg-gradient-to-r from-fuchsia-600 to-pink-600 text-white px-4
+                <div className='text-3xl mg:text-6xl bg-gradient-to-r from-blue-600 to-green-600 text-white px-4
                 p-2 rounded-md'>
                     work forward.
                 </div>

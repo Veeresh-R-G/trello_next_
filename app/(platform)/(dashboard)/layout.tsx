@@ -1,6 +1,6 @@
 import React from 'react'
 import Navbar from './_components/navbar'
-function OrganizationLayout({ children }: {
+function DashboardLayout({ children }: {
     children: React.ReactNode
 }) {
     return (
@@ -11,4 +11,4 @@ function OrganizationLayout({ children }: {
     )
 }
 
-export default OrganizationLayout
+export default DashboardLayout

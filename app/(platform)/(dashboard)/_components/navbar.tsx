@@ -6,11 +6,11 @@ import { OrganizationSwitcher, UserButton } from '@clerk/nextjs'
 function Navbar() {
     return (
         <div className='fixed z-50 w-full top-0 h-14 border-b shadow-sm bg-white flex items-center'>
-            <div className='flex items-center gap-x-4'>
+            <div className='flex items-center gap-x-5 ml-3'>
                 <div className='hidden md:flex'>
                     <Logo />
                 </div>
-                <Button size={"sm"} className='rounded-sm hidden md:block h-auto py-1.5 px-2'>
+                <Button variant={"mycolor"} size={"sm"} className='rounded-sm hidden md:block h-auto py-1.5 px-2'>
                     Create
                 </Button>
                 <Button size={"sm"} className='rounded-sm block ml-3 md:hidden'>

@@ -48,7 +48,13 @@ export const Sidebar = ({
     if (!isLoadedOrg || !isLoadedOrgList || userMemberships.isLoading) {
         return (
             <>
-                <Skeleton />
+                <div className="flex justify-between pt-10">
+                    <Skeleton className="w-[60%] h-10" />
+                    <Skeleton className="w-10 h-10" />
+                </div>
+                <Skeleton className="mt-3 w-full h-10" />
+                <Skeleton className="mt-3 w-full h-10" />
+                <Skeleton className="mt-3 w-full h-10" />
             </>
         )
     }

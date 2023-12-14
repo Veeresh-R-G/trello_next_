@@ -25,6 +25,8 @@ export const MobileSidebar = () => {
         onClose();
     }, [onClose, pathname])
 
+
+    //to avoid any hydration error, to avoid any mismatches between the server and the client side
     if (!Ismounted) {
         return null;
     }

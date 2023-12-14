@@ -54,7 +54,7 @@ export const Sidebar = ({
     }
     return (
         <>
-            <div className="font-medium text-xs flex items-center mb-1">
+            <div className={`font-medium text-xs flex items-center mb-1 ${storageKey != 't-sidebad-state' && "pt-9"}`}>
                 <span className="pl-4 text-base">
                     Workspaces
                 </span>

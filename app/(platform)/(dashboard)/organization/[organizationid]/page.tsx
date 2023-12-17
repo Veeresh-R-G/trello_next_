@@ -1,5 +1,6 @@
 // import { create } from "@/app/actions/create-board"
 import { Button } from "@/components/ui/button"
+import { FORM } from "./form"
 
 
 const OrganizationIdPage = ({ params }:
@@ -13,7 +14,8 @@ const OrganizationIdPage = ({ params }:
     return (
         <div>
             Organization Page here : {params.organizationid}
-            <form>
+            <FORM />
+            {/* <form>
 
                 <input
                     name="title"
@@ -24,7 +26,7 @@ const OrganizationIdPage = ({ params }:
                 <Button size={"sm"} variant={"link"} type="submit">
                     Submit
                 </Button>
-            </form>
+            </form> */}
         </div>
     )
 }

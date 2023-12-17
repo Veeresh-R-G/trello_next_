@@ -1,32 +1,11 @@
-// import { create } from "@/app/actions/create-board"
-import { Button } from "@/components/ui/button"
-import { FORM } from "./form"
+import { Info } from "./_components/info";
 
-
-const OrganizationIdPage = ({ params }:
-    {
-        params: {
-            organizationid: String
-        }
-    }) => {
-
+const OrganizationIdPage = () => {
 
     return (
-        <div>
-            Organization Page here : {params.organizationid}
-            <FORM />
-            {/* <form>
+        <div className="w-full mb-20">
+            <Info />
 
-                <input
-                    name="title"
-                    placeholder="type in here"
-                    className="border-black outline-double outline-blue-700"
-                />
-
-                <Button size={"sm"} variant={"link"} type="submit">
-                    Submit
-                </Button>
-            </form> */}
         </div>
     )
 }

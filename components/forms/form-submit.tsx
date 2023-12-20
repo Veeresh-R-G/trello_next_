@@ -9,13 +9,13 @@ interface FormSubmitProps {
     disabled?: boolean;
     className?: string;
     variant?: "default" | "destructive" | "outline" |
-    "secondary" | "ghost" | "link" | "mycolor"
+    "secondary" | "ghost" | "link" | "mycolor" | "primary"
     | null | undefined
 }
 
 
 export const FormSubmit = ({
-    children, disabled, className, variant
+    children, disabled, className, variant = "primary"
 }: FormSubmitProps) => {
 
     const { pending } = useFormStatus();

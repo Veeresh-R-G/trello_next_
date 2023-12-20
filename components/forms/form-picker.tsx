@@ -25,7 +25,6 @@ export const FormPicker = ({ id, errors }:
     const [images, setImages] = useState<Array<Record<string, any>>>(defaultImages)
     const [isLoading, setLoading] = useState<boolean>(true);
     const [selectedImageId, setImageID] = useState(null)
-    console.log(errors);
 
     useEffect(() => {
 

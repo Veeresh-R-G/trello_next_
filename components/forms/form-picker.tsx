@@ -10,6 +10,8 @@ import { Check } from "lucide-react";
 import Link from "next/link"
 import Image from "next/image";
 
+import { defaultImages } from "@/constants/images";
+import { FormErrors } from "./form-errors";
 interface FormPickerProps {
     id: string;
     errors?: Record<string, string[] | undefined>;
@@ -20,9 +22,10 @@ export const FormPicker = ({ id, errors }:
 
     const { pending } = useFormStatus();
 
-    const [images, setImages] = useState<Array<Record<string, any>>>([])
+    const [images, setImages] = useState<Array<Record<string, any>>>(defaultImages)
     const [isLoading, setLoading] = useState<boolean>(true);
     const [selectedImageId, setImageID] = useState(null)
+    console.log(errors);
 
     useEffect(() => {
 
@@ -48,7 +51,7 @@ export const FormPicker = ({ id, errors }:
             }
             catch (err: any) {
                 console.log({ err })
-                setImages([])
+                setImages(defaultImages)
                 toast.error("Fetch Images")
             }
             finally {
@@ -112,6 +115,9 @@ export const FormPicker = ({ id, errors }:
                     </div>
                 ))}
             </div>
+            <FormErrors
+                id="image"
+                errors={errors || {}} />
         </div>
     )
 }

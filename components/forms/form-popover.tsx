@@ -36,7 +36,7 @@ export const FormPopover = ({
         onSuccess: (data) => {
             closeRef.current?.click();
             toast.success("Board Created")
-            router.push(`/boards/${data.id}`)
+            router.push(`/board/${data.id}`)
         },
         onError: (err) => {
 
@@ -47,8 +47,6 @@ export const FormPopover = ({
     const onSubmit = (formData: FormData) => {
         const title = formData.get("title") as string;
         const image = formData.get("image") as string;
-        console.log({ title, image });
-
         execute({ title, image })
     }
     return (
